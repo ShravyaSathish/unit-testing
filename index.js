@@ -25,9 +25,4 @@ app.listen(port, () => {
 
 module.exports = {
   app: app,
-  closeServer: () => {
-    if (server) {
-      server.close();
-    }
-  },
 };

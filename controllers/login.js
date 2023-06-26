@@ -21,7 +21,8 @@ const login = async (req, res) => {
       }
     }
   } catch (err) {
-    res.status(500).json({ message: "internal server error" });
+    res.json({ message: "internal server error" });
+    // throw new Error("internal server error");
   }
 };
 
